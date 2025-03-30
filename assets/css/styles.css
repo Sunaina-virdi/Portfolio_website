@@ -193,7 +193,7 @@ img {
   width: 250px;
   position: absolute;
   justify-self: center;
-  align-self: flex-end;
+  align-self:center;
 }
 .perfil__data{
   align-self: flex-end;
