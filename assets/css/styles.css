@@ -450,6 +450,7 @@ img {
 
 .education__company{
   font-size: var(--h2-font-size);
+  color: rgb(228, 132, 132);
 }
 
 .education__data{
@@ -498,7 +499,7 @@ img {
   border-radius: 50%;
   position: absolute;
   top: -1rem;
-  right: -1rem;
+  right: -2rem;
   transition: transform .4s;
 }
 
