@@ -57,7 +57,7 @@
                     <img src="assets/img/me2-removebg-preview.png" alt="image" class="perfil__img"/>
 
                     <div class="perfil__data">
-                        <h1 class="perfil__name">Sunaina<br>Virdi</h1>
+                        <h1 class="perfil__name"><span class="role1"></span></h1>
 
                         <div class="perfil__buttons">
                             <a href="#projects" class="button">Projects</a>
@@ -270,8 +270,10 @@
 
             <div class="education__container container grid">
                 <article class="education__card">
-                    
-                    <h2 class="education__company"><i class="ri-school-line"></i> Chitkara University</h2>
+                    <div>
+                        <h4 class="education__company"><i class="ri-school-line"></i> Chitkara University</h4>
+                        <h2>&nbsp Rajpura</h2>
+                    </div> 
 
                     <div class="education__data">
                         <h3 class="education__profession">Bachelor of Engineering </h3>
@@ -283,8 +285,12 @@
                 </article>
 
                 <article class="education__card">
-                    
-                    <h2 class="education__company"><i class="ri-school-line"></i> Government model senior secondary school</h2>
+                    <div>
+                        <h2 class="education__company">
+                        <i class="ri-school-line"></i> Government model senior secondary school
+                        </h2>
+                        <h2>&nbsp Chandigarh</h2>
+                    </div>
                     <div class="education__data">
                         <h3 class="education__profession">12th Board</h3>
                         <span class="education__date">2020-2022</span>
@@ -296,7 +302,10 @@
                 </article>
 
                 <article class="education__card">
+                    <div>
                     <h2 class="education__company"><i class="ri-school-line"></i> St. Xavier's high School</h2>
+                    <h2>&nbsp Panchkula</h2>
+                    </div>
 
                     <div class="education__data">
                         <h3 class="education__profession">10th Board</h3>
@@ -329,7 +338,7 @@
                         <span>Visit profile</span>
                     </a>
                 </article>
-                <article class="codings__card">
+                <article class="codings__card" id="odd">
                     <div class="codings__icon">
                         <div class="codings__circle">
                             <i class="ri-code-box-line"></i>
@@ -361,7 +370,7 @@
                         <span>Visit profile</span>
                     </a>
                 </article>
-                <article class="codings__card">
+                <article class="codings__card" id="odd">
                     <div class="codings__icon">
                         <div class="codings__circle">
                             <i class="ri-code-box-line"></i>
@@ -456,5 +465,22 @@
 
       <!--=============== MAIN JS ===============-->
       <script src="assets/js/main.js"></script>
+      <!-- Add this before your custom script -->
+      <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+      <script>
+        var typeData = new Typed(".role1", {
+          strings: [
+            "JAVA Enthusiastic",
+            "Mern Stack Developer",
+            "Coder",
+            "Problem Solver"
+          ],
+          loop: true,
+          typeSpeed: 100,
+          backSpeed: 80,
+          backDelay: 1000,
+        });
+      </script>
    </body>
 </html>

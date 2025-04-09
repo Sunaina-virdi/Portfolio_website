@@ -370,7 +370,10 @@ img {
 
 /*=============== PROJECTS ===============*/
 .projects__card{
-  background-color: var(--container-color);
+  /* background-color: var(--container-color); */
+  /* background: linear-gradient(to left, #681212, #000000); */
+  /* background: radial-gradient(circle,#681212, #000000); */
+  background: linear-gradient(170deg, #681212, #000000);
   padding: 1.5rem;
   border-radius: 2rem;
 }
@@ -449,12 +452,16 @@ img {
 }
 
 .education__company{
-  font-size: var(--h2-font-size);
-  color: rgb(228, 132, 132);
+  border-radius: 1.5rem;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  padding: 0.5rem;
+  /* font-size: var(--h2-font-size); */
+  color: rgb(216, 160, 153);
 }
 
 .education__data{
-  background-color: var(--container-color);
+  /* background-color: var(--container-color); */
+  background: linear-gradient(170deg,  #000000,#681212);
   padding: 1.5rem;
   border-radius: 1.5rem;
 }
@@ -475,11 +482,14 @@ img {
 
 /*=============== CODING PROFILE ===============*/
 .codings__card{
-  background-color: var(--container-color);
+  /* background-color: var(--container-color); */
+  background: linear-gradient(190deg,#681212, #000000);
   padding: 4rem 1.5rem 3.5rem 1.5rem;
   border-radius: 2rem;
 }
-
+#odd{
+  background: linear-gradient(190deg, #000000,#681212);
+}
 .codings__icon{
   display: inline-block;
   position: relative;
