@@ -441,6 +441,37 @@ img {
   transform: scale(1.2);
 }
 
+.projects__show-more-container {
+  text-align: center;
+  margin-top: 2rem;
+
+}
+#showMoreBtn{
+  padding: 10px;
+  border-radius: 1.5rem;
+  background: linear-gradient(170deg, #681212, #000000);
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+}
+.projects__card {
+  transition: all 0.4s ease;
+  transform: scale(1);
+  opacity: 1;
+}
+
+.projects__card.hide {
+  transform: scale(0.95);
+  opacity: 0;
+  pointer-events: none;
+  height: 0;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+
+
 /*=============== EDUCATIONS ===============*/
 .education__container{
   row-gap: 2rem;

@@ -143,7 +143,7 @@
          <section class="projects section" id="projects">
             <h2 class="section__title">RECENT PROJECTS</h2>
 
-            <div class="projects__container container grid" >
+            <div class="projects__container container grid"  id="projectsContainer">
                 <article class="projects__card">
                     <a href="#" target="_blank" class="projects__image">
                         <img src="assets/img/project-task.png" alt="image" class="projects__img">
@@ -314,6 +314,10 @@
                 </article>
 
             </div>
+            <div class="projects__show-more-container">
+                <button id="showMoreBtn" class="projects__button">Show More Projects    →</button>
+            </div>
+
          </section>
 
         <!--==================== EDUCATION ====================-->
@@ -533,6 +537,42 @@
           backSpeed: 80,
           backDelay: 1000,
         });
+        document.addEventListener("DOMContentLoaded", function () {
+        const projects = document.querySelectorAll(".projects__card");
+        const toggleBtn = document.getElementById("showMoreBtn");
+
+        const showInitialProjects = () => {
+        projects.forEach((project, index) => {
+            if (index < 3) {
+            project.classList.remove("hide");
+            } else {
+            project.classList.add("hide");
+            }
+        });
+        toggleBtn.textContent = "Show More Projects";
+        };
+
+        const showAllProjects = () => {
+        projects.forEach(project => {
+            project.classList.remove("hide");
+        });
+        toggleBtn.textContent = "Show Less Projects";
+        };
+
+        // Initial display
+        showInitialProjects();
+
+        let showingAll = false;
+
+        toggleBtn.addEventListener("click", () => {
+        if (showingAll) {
+            showInitialProjects();
+        } else {
+            showAllProjects();
+        }
+        showingAll = !showingAll;
+        });
+    });
       </script>
    </body>
 </html>
