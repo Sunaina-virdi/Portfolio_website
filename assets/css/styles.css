@@ -623,6 +623,8 @@ img {
   font-size: var(--small-font-size);
   color: var(--text-color);
 }
+
+
 /*=============== SCROLL BAR ===============*/
 ::-webkit-scrollbar{
   width: .6rem;
@@ -876,3 +878,5 @@ img {
     right: 4rem;
   }
 }
+
+
